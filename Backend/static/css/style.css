@@ -1,0 +1,173 @@
+
+/* Base Colors & WCAG High Contrast */
+:root {
+    --primary-color: #005a9c;       /* Strong blue */
+    --secondary-color: #ffffff;     /* White for text/buttons */
+    --accent-color: #f39c12;        /* Orange for highlights */
+    --bg-color: #ffffff;             /* Light background */
+    --text-color: #111111;           /* Dark text for readability */
+    --card-bg: #f9f9f9;              /* Card background */
+    --placeholder-bg: #e8f0fe;       /* Placeholder highlight */
+    --error-color: #d8000c;          /* Red for errors */
+}
+
+/* General body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Streamlit main container override */
+[data-testid="stAppViewContainer"] {
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Radio buttons / Upload Options */
+.stRadio {
+    margin-bottom: 1rem;
+}
+
+/* File upload & URL input styling */
+.stFileUploader, .stTextInput {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stFileUploader:focus-within, .stTextInput:focus-within {
+    outline: 3px solid var(--primary-color);
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Word Highlight Placeholder */
+.stPlaceholder {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--placeholder-bg);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* Transcript Area */
+textarea, .stTextArea textarea {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 100%;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover,
+.stButton button:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+    transform: scale(1.03);
+    outline: none;
+}
+
+/* Download Button (WCAG compliant) */
+[data-baseweb="button"][title*="Download"] {
+    background-color: var(--accent-color) !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    font-weight: bold !important;
+}
+
+/* Cards / Sections */
+.stContainer {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+/* Footer / Notes */
+.stMarkdown {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Error messages */
+.stError {
+    color: var(--error-color);
+    font-weight: bold;
+}
+
+/* Focus Outline for Accessibility */
+button:focus, input:focus, textarea:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* --- IMAGE CAPTION & DESCRIPTION --- */
+.image-card {
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.image-card h4 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.image-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0.3rem 0;
+    color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    [data-testid="stAppViewContainer"] {
+        padding: 1rem;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2rem;
+    }
+
+    textarea, .stTextArea textarea {
+        font-size: 0.95rem;
+    }
+}
+

@@ -1,0 +1,23 @@
+streamlit
+PyPDF2
+python-docx
+beautifulsoup4
+validators
+pandas
+gtts
+pyaudio
+pytest
+SpeechRecognition
+
+
+# AI SDKs (replace with actual names)
+# crewai_sdk
+# gemini_client_sdk
+
+# ASR
+openai-whisper
+torch
+
+# OCR
+pytesseract
+pillow

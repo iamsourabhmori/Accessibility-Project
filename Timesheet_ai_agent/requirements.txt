@@ -1,0 +1,11 @@
+streamlit
+pandas
+crewai
+openai
+pytesseract
+Pillow
+google-generativeai
+python-dotenv
+opencv-python
+opencv-python-headless
+matplotlib

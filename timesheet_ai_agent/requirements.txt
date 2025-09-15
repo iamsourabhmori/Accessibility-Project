@@ -1,0 +1,31 @@
+# Core AI agent framework
+crewai
+
+# Streamlit for dashboard UI
+streamlit
+
+# OCR dependencies
+pytesseract
+Pillow
+
+# Screenshot capture
+pyautogui
+
+# For structured file operations and APIs (if needed later)
+requests
+
+# Optional: If your OCR tool requires tesseract installed on system
+# Make sure tesseract is installed in your environment
+# For Ubuntu: sudo apt install tesseract-ocr
+
+# Optional: Selenium if browser automation is planned
+# selenium
+google-generativeai
+crewai
+
+crewai-tools
+python-docx
+tools
+Pillow
+pytesseract 
+tesseract-ocr

@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  web:
+    image: python:3.10-slim
+    container_name: compliance_ai_agent_web
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - CREWAI_API_KEY=${CREWAI_API_KEY}
+      - TTS_API_KEY=${TTS_API_KEY}
+      - ASR_API_KEY=${ASR_API_KEY}
+      - UPLOAD_DIR=/app/data/uploads
+      - OUTPUT_DIR=/app/outputs
+    command: >
+      /bin/sh -c "pip install -r requirements.txt &&
+                  streamlit run app/main.py --server.port=8501 --server.address=0.0.0.0"

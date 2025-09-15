@@ -1,0 +1,68 @@
+# Core
+
+streamlit==1.26.0
+Pillow==9.5.0
+
+numpy==1.26.4
+requests==2.31.0
+
+# PyTorch CPU-only (compatible with Python 3.12)
+torch==2.2.0
+torchaudio==2.2.0
+torchvision==2.2.0
+# Audio processing
+openai-whisper==20231117
+pydub==0.25.1
+SpeechRecognition==3.10.0
+gTTS==2.3.2
+soundfile==0.12.1
+librosa==0.10.1
+webrtcvad
+
+# Video/audio transcriber dependencies
+opencv-python-headless==4.10.0.84
+ffmpeg-python==0.2.0
+moviepy==1.0.3
+
+# Image transcriber dependencies
+
+datasets==2.14.2
+sentencepiece==0.1.99
+timm==0.9.8
+transformers==4.41.0
+
+# FastAPI backend dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pydantic>=2.0
+
+
+streamlit-webrtc
+aiortc
+av
+rapidfuzz
+pypdf
+python-docx
+
+
+SpeechRecognition 
+streamlit-mic-recorder
+
+
+#new dependencies AI for Assistant
+SpeechRecognition
+pyttsx3
+pywhatkit
+requests
+pyaudio
+google-generativeai
+
+python-dotenv
+
+
+# new dependencies
+
+pyautogui 
+keyboard 
+pyperclip
