@@ -1,0 +1,67 @@
+# Django REST API
+Django>=5.0
+djangorestframework>=3.15
+
+# CrewAI
+crewai
+
+# Utilities
+python-dotenv
+requests
+pillow>=10.0.0
+
+# Audio/Video Handling
+pydub>=0.25.1
+ffmpeg-python>=0.2.0
+moviepy>=1.0.3
+
+setuptools
+wheel
+
+# Audio Processing / Speech Recognition
+SpeechRecognition>=3.8.1
+soundfile>=0.12.1
+pyttsx3>=2.90
+gTTS>=2.3.1
+
+# File Handling / Parsing
+python-docx>=0.8.12
+PyPDF2>=3.0.1
+openpyxl>=3.1.2
+
+# Image Handling
+opencv-python-headless>=4.8.0
+numpy>=1.26.0
+
+# HuggingFace
+transformers>=4.55.0
+tokenizers>=0.20.3
+
+docx2txt
+
+librosa
+fastapi
+
+google-generativeai>=0.3.0
+python-decouple>=3.8
+
+
+SpeechRecognition 
+pyaudio
+
+rapidfuzz>=3.0.0
+
+
+#---------------------------------------------------------------------------------------------------------------------
+
+# sudo apt-get install portaudio19-dev
+# pip install pyaudio
+
+# sudo apt install ffmpeg
+
+# Django>=5.2,<6
+# djangorestframework>=3.15,<4
+
+#-------------------------------------------------------------------------------------------------------------------
+
+
